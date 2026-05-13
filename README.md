@@ -7,7 +7,7 @@ A multi-path automation system designed to handle the lead lifecycle within an A
 ## 2. Full Workflow Architecture
 The following map details the 5-path logic used to route leads based on their current CRM stage: `Ready to Start`, `No Response`, `Quoted`, `Approved`, and `Paid/Closed`.
 
-![Full Automation Architecture](images/workflow_Image1.png)
+![Full Automation Architecture](images/asana_workflow_1.png)
 
 ## 3. Technical Stack
 * **Logic Engine:** Zapier Paths (5 distinct branches).
@@ -20,7 +20,7 @@ The following map details the 5-path logic used to route leads based on their cu
 ### A. Lead Folder De-duplication (Find or Create)
 To prevent storage fragmentation, the system uses a "Search and Fallback" logic gate. Before creating any assets, the system verifies if a project directory already exists.
 
-![De-duplication Logic Configuration](images/workflow_Image2.png)
+![De-duplication Logic Configuration](images/asana_workflow2.png)
 
 * **Step:** `Find or Create Lead Folder`.
 * **Logic:** Searches Google Drive for a folder matching the `Task Name`. If the search returns null, the system is configured to create a new directory automatically.
